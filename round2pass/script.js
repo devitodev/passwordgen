@@ -22,7 +22,6 @@ function showPasswordForm() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 function getRandomLower () {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
