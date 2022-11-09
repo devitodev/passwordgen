@@ -1,5 +1,4 @@
 
-var allOptions = [];
 var numbers = [1,2,3,4,5,6,7,8,9,0];
 var symbols = ['!','@','#','$','%','^','&','*','(',')','{','}','[',']','=','<','>'];
 var lowercaseLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -8,7 +7,7 @@ var uppercaseLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N',
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", genPrompt);
 
-function generatePassword(passwordLength,password) {
+function generatePassword(passwordLength,password, allOptions) {
   let remaining = 0;
   remaining = passwordLength - password.length;
     for(var i = 0; i < remaining; i++) {
@@ -31,6 +30,7 @@ function writePassword(password) {
 
 function genPrompt () {
   var password = ""
+  var allOptions = [];
   let passwordLength = parseInt(prompt('What is your preferred length for your password? (it must be 8-128)'))
   
   if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
@@ -54,6 +54,6 @@ function genPrompt () {
     password += loopCharacter(numbers)
   }
 
-generatePassword(passwordLength,password)
+generatePassword(passwordLength,password, allOptions)
 
 }
