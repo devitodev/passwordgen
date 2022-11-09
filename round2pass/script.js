@@ -52,7 +52,7 @@ function genPrompt () {
 
 
 
-
+// Liam's way of prompting
 // function showPasswordForm() {
 //     const passwordForm = document.getElementById('password-form')
 //     if (passwordForm.style.display === "") {
