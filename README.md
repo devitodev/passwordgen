@@ -19,4 +19,4 @@ Specfically Amanda for all of her help: https://www.linkedin.com/in/amandardz/
 
 Thank you to Tracy for her helpful solution to a bug: https://www.linkedin.com/in/tracymortara/
 
-
+Thank you to Daniel Vega on YouTube for his very helpful video tutorial
